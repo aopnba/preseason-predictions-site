@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#143caa"><link rel="icon" href="LOGO.png"><title>Preseason Predictions</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main><header class="title-row"><h1>Preseason Predictions</h1><img src="LOGO.png" alt="ALL NBA"></header>
+<section class="workspace"><aside class="editor"><div class="step"><span>Players</span><b id="count">0 OF 5</b></div><p class="hint">Choose a category, then find your player.</p><div id="picks"></div><div class="personal"><label for="author">YOUR @ HANDLE <span>OPTIONAL</span></label><input id="author" maxlength="32" placeholder="@yourhandle" autocomplete="off"></div><p class="saved">Picks saved on this device.</p><button class="reset" id="reset">Reset predictions</button></aside>
+<div class="preview"><div class="preview-top"><span>Preview</span></div><canvas id="board" width="1080" height="1350" aria-label="Your preseason prediction card"></canvas><div class="export-bar"><div><p>2160 × 2700 PNG</p></div><button id="export" disabled>Export PNG</button></div><p class="export-note" id="status" role="status">Select a player for each category.</p></div></section>
+</main>
+<dialog id="picker" aria-labelledby="picker-title"><div class="dialog-head"><div><h2 id="picker-title"></h2></div><button class="close" id="close" aria-label="Close player picker">×</button></div><label class="search-label" for="search">Search players</label><input id="search" type="search" placeholder="Type a player’s name…" autocomplete="off"><div id="results" class="results"></div><button class="remove" id="remove">Remove this pick</button></dialog>
+<script src="app.js" defer></script></body></html>
